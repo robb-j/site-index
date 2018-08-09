@@ -1,0 +1,30 @@
+doctype html
+html(lang="en", dir="ltr")
+  head
+    title= pageTitle || 'Index'
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    link(rel="icon" href="favicon.png")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css")
+    style
+      include style.css
+  body
+    .hero.is-dark.is-small
+      .hero-body
+        .container
+          h1.title.is-monospace= pageTitle || 'Index'
+    section.section
+      .container
+        h1.title Sites
+        h2.subtitle The different sites available on this server
+        .content
+          ul.is-size-5
+            each site in sites
+              li
+                a(href=site.link)= site.name
+                |  &ndash; 
+                span= site.info
+    footer.has-text-centered.is-monospace
+      | View source on 
+      a(href="https://github.com/robb-j/site-index") GitHub
+      

@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 6px solid #3F4C71;
+}
+
+.hero.is-dark {
+  background: linear-gradient(141deg,#2F3954 0,#3F4C71 71%,#4D5D8A 100%);
+  color: #f9f9f9;
+}
+
+.section {
+  flex: 1;
+}
+
+.is-monospace {
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+
+footer {
+  margin-bottom: 0.5em;
+  font-size: 0.85rem;
+}
+
+footer a {
+  font-weight: bold;
+  color: #363636;
+}
