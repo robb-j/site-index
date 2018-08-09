@@ -4,7 +4,9 @@ Generate a site index directory with a yaml spec, setup with [robb-j/node-base](
 
 ## Usage
 
-The app runs on port `3000` in the container and your should mount your `sites.yml` into `/app/web/sites/yml`
+The app runs on port `3000` in the container and your should mount your `sites.yml` into `/app/web/sites/yml`.
+
+**docker-compose.yml**
 
 ```yaml
 services:
@@ -14,6 +16,15 @@ services:
       - ./sites.yml:/app/web/sites.yml
     ports:
       - 3000:3000
+```
+
+**sites.yml**
+
+```yaml
+pageTitle: Index
+sites:
+  - link: github.com/robb-j/site-index
+    info: Quickly generate a site index using a Yaml spec
 ```
 
 ## Dev Commands
