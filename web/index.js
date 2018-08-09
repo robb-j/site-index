@@ -34,9 +34,8 @@ function validateSites (sitesSpec) {
       const id = `sites[${i}]`
       if (typeof site !== 'object') throw new Error(`${id} is not an object`)
 
-      const { link, name, info } = site
+      const { link, info } = site
       if (typeof link !== 'string') throw new Error(`${id}.link isn't a string`)
-      if (typeof name !== 'string') throw new Error(`${id}.name isn't a string`)
       if (typeof info !== 'string') throw new Error(`${id}.info isn't a string`)
     })
   } catch (error) {

@@ -1,5 +1,4 @@
 pageTitle: Index
 sites:
-  - link: https://github.com/robb-j/site-index/
-    name: Site Index
+  - link: github.com/robb-j/site-index
     info: Quickly generate a site index using a Yaml spec

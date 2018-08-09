@@ -21,7 +21,7 @@ html(lang="en", dir="ltr")
           ul.is-size-5
             each site in sites
               li
-                a(href=site.link)= site.name
+                a(href='//' + site.link)= site.link
                 |  &ndash; 
                 span= site.info
     footer.has-text-centered.is-monospace
