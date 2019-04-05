@@ -5,32 +5,27 @@
   "description": "Generate a site index using a yaml spec file",
   "main": "web/index.js",
   "scripts": {
-    "coverage": "nyc --reporter=html mocha test/unit",
-    "coverage-summary": "nyc --reporter=text-summary mocha test/unit",
     "lint": "eslint web test",
     "postversion": "node tools/buildAndPush.js latest",
     "start": "node web",
-    "test": "mocha test/unit",
+    "test": "exit 1",
     "watch": "nodemon web --watch web"
   },
   "author": "robb-j",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.5.2",
+    "koa": "^2.7.0",
     "koa-router": "^7.4.0",
     "pug": "^2.0.3",
-    "yaml": "^1.0.0-rc.7"
+    "yaml": "^1.4.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.17.5",
-    "nyc": "^12.0.2"
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.10"
   }
 }
