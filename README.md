@@ -2,6 +2,8 @@
 
 Generate a site index directory with a yaml spec, setup with [robb-j/node-base](https://github.com/robb-j/node-base/).
 
+> For a more extensible solution, use [robb-j/static-page](https://github.com/robb-j/static-page).
+
 ## Usage
 
 The app runs on port `3000` in the container and you should mount your `sites.yml` into `/app/web/sites.yml`.
